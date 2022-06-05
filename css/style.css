@@ -59,6 +59,9 @@ h1,h2,h3,h4,h5,h6,ul,li,p {
 
 .services {
     display: flex;
+}
+
+.what-we-do {
     padding-bottom: 94px;
 }
 
@@ -66,16 +69,18 @@ h1,h2,h3,h4,h5,h6,ul,li,p {
     margin-right: 30px;
 }
 
-.section_title {
-    color:var(--small-text-color);
+
+.advantages_title {
+    color: var(--small-text-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
-.main {
+
+.section_title {
     color: var(--button-and-h1-color);
     text-transform: uppercase;
     font-size: 44px;
@@ -87,7 +92,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p {
     margin: 0 auto 45px auto;
 }
 
-.name {
+.team-list-name {
     text-transform: none;
     font-size: 16px;
     line-height: 1.19;
@@ -96,13 +101,14 @@ h1,h2,h3,h4,h5,h6,ul,li,p {
     margin-bottom: 10px;
 }
 
-.second {
+.second_title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     text-transform: none;
     font-weight: 700;
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .contacts {
@@ -166,13 +172,15 @@ display: flex;
 .menu {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
 }
 .menu > li:not(last-child){
     margin-right:8px;
 }
 
+.main-menu {
+    padding-top:94px;
+    padding-bottom:94px;
+}
 
 .menu .button.active {
     background-color: var(--background-button-hover);
@@ -229,16 +237,44 @@ margin: auto 50px auto 0;
 /* Banner */
 
 .banner {
+background-image: url("../images/banner_background.jpg");
 background-color: var(--background-header-footer-color);
+background-repeat: no-repeat;
+background-position:center;
+background-size: cover;
 padding-top: 200px;
 padding-bottom: 200px;
 text-align: center;
+max-width: 1600px;
+max-height: 600px;
+margin-left: auto;
+margin-right: auto;
 }
 
 /* Contacts */
 
 .top-adress:first-child{
   margin-right: 50px;
+}
+
+.top-adress:first-child:before {
+    display: inline-block;
+    content:"";
+    width: 16px;
+    height: 12px;
+    background-image: url("../images/mail.svg");
+    background-position: center;
+    margin-right: 10px;
+}
+
+.top-adress:last-child:before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 16px;
+    background-image: url("../images/phone.svg");
+    background-position: center;
+    margin-right: 10px;
 }
 
 .top-adress a{
@@ -287,8 +323,31 @@ display: flex;
     display:flex;
 }
 
-.site-advantages li {
-    max-width: 270px;
+.site-advantages-box:before {
+   display: block;
+   content: "";
+   width: 270px;
+   height: 120px;
+   margin-bottom: 30px;
+   background-color: var(--background-our-team-color);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.site-advantages-box:nth-child(1):before {
+    background-image: url(../images/antena.svg);
+}
+
+.site-advantages-box:nth-child(2):before {
+    background-image: url(../images/clock.svg);
+}
+
+.site-advantages-box:nth-child(3):before {
+    background-image: url(../images/diagram.svg);
+}
+
+.site-advantages-box:nth-child(4):before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .site-advantages > li:nth-child(-n + 3) {
@@ -306,13 +365,13 @@ display: flex;
     margin-right: 30px;
 }
 
-.team-list {
+.team-list-box {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-name {
+.team-list-box {
  padding-top:30px;
  padding-bottom:30px;
 }
@@ -339,6 +398,7 @@ margin-bottom: 4px;
 .portfolio-project {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .item {
@@ -361,9 +421,36 @@ margin-right: 0;
 }
 
 .item:nth-last-child(-n + 3) {
-    margin-bottom: 94px;
+    margin-bottom: 0px;
 }
 
+/* Regular-Customers */
+
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.regular-customers-list {
+    display: flex;
+}
+
+.regular-customers-box {
+    width: 170px;
+    height: 92px;
+    list-style-type:none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.regular-customers-box:last-child {
+    margin-right: 0px;
+}
+
+
+/* Footer */
 
 .footer {
     background-color: var(--background-header-footer-color);
