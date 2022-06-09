@@ -206,7 +206,7 @@ display: flex;
 
 .button:hover,
 .button:active,
-.button:focus, {
+.button:focus {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
