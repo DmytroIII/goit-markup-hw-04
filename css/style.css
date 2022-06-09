@@ -205,7 +205,8 @@ display: flex;
 }
 
 .button:hover,
-.button:active {
+.button:active,
+.button:focus, {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
@@ -289,7 +290,9 @@ margin-right:10px;
 }
 
 .site-contacts .link:hover,
-.site-contacts .map:hover {
+.site-contacts .map:hover,
+.site-contacts .link:focus,
+.site-contacts .map:focus {
         color: var(--background-button-hover);
 }
 
@@ -388,7 +391,8 @@ justify-content: center;
 
 }
 
-.social-media-link:hover {
+.social-media-link:hover, 
+.social-media-link:focus {
     background-color: var(--background-button-hover);
     color: var(--button-and-h1-color);
     border-radius: 50%;
@@ -443,9 +447,9 @@ margin-bottom: 4px;
     margin-top: 50px;
 }
 
-.item:hover {
-border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.item:hover,
+.item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item {
@@ -496,7 +500,8 @@ margin-right: 0;
     color: var(--background-svg-color);
 }
 
-.regular-customers-link:hover {
+.regular-customers-link:hover,
+.regular-customers-link:focus {
 border: 1px solid var(--background-button-hover);
 color: var(--background-button-hover);
 cursor: pointer;
@@ -572,7 +577,8 @@ display: flex;
     color: var(--button-and-h1-color);
 }
 
-.social-media-link-bottom:hover {
+.social-media-link-bottom:hover,
+.social-media-link-bottom:focus {
     background-color: var(--background-button-hover);
     color: var(--button-and-h1-color);
     border-radius: 50%;
