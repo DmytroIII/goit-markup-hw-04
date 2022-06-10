@@ -540,6 +540,7 @@ display: flex;
     color: var(--button-and-h1-color);
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .logo.bottom {
